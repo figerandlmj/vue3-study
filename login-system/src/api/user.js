@@ -16,6 +16,26 @@ export function delay(duration) {
 export async function login(loginId, loginPwd) {
   await delay();
   if (loginId === 'admin' && loginPwd === '123456') {
-    return
+    const user = {
+      name: '管理员',
+      loginId
+    };
+    localStorage.setItem('user', JSON.stringify(user));
+    return user;
   }
+  return null;
+}
+
+export async function loginOut() {
+  await delay();
+  localStorage.removeItem('user');
+}
+
+export async function whoAmI() {
+  await delay();
+  const user = localStorage.getItem('user');
+  if (user) {
+    return JSON.parse(user);
+  }
+  return null;
 }
