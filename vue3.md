@@ -245,3 +245,9 @@ setup(props, context) {
 > composition 配合 reactivity 使用，可在组件内部进行更加细粒度的控制，使得组件不同的功能高度聚合，提升了代码的可维护性，对于不同组件的相同功能，也能够更好的复用；相比 options，composition 中没有了指向奇怪的 this，所有 api 变得更加函数化，有利于和类型推导系统（ts）深度配合。
 
 10. 共享数据
+ 
+> vuex
+
+> global state
+
+> provide/inject
