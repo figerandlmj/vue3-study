@@ -251,3 +251,12 @@ setup(props, context) {
 > global state
 
 > provide/inject
+
+| 比较 | vuex | global state | provide & inject |
+| :---: | :---: | :--- | :---: |
+| 组件数据共享 | Y | Y | Y |
+| 可否脱离组件 | Y | Y | N|
+| 测试工具 | Y | N | Y |
+| 状态树 | Y | 自行决定 | 自行决定 |
+| 量级 | 重 | 轻 | 轻 | 
+
